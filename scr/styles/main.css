@@ -118,14 +118,17 @@ header{
   top: 0;
   right: 0;
   left: 0;
-  background-color: #565554;
+  background-color: #242038;
   width: 100%;
   height: 100px;
+}
+header .header-logo{
+  display:none;
 }
 header .header-brand {
   font-family: Bangers;
   font-size: 34px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   font-weight: 900;
   color: #51D6FF;
   text-transform: uppercase;
@@ -133,7 +136,7 @@ header .header-brand {
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  text-shadow: 2px 2px 8px #111;
+  text-shadow: .5px .5px 4px #f1f1f1;
 }
 
 header nav ul {
@@ -164,14 +167,23 @@ header .header-cases{
 /* Desktop */
 @media only screen and (min-width: 1000px) {
 
+  header .header-logo{
+    display: block;
+    width:125px;
+    height:75px;
+    float: left;
+    margin-top: 10px;
+  }
+
   header .header-brand {
     /* 100 - lineheight / 2 */
-    margin: 30px 0;
+    display: block;
+    margin: 35px 0;
     text-align: left;
-    padding: 0 20px 0 40px;
+    padding: 0 10px 0 30px;
     border-right: 4px solid #fff;
     float: left;
-    line-height: 40px;
+    line-height: 30px;
   }
 
   header nav ul {
@@ -191,9 +203,9 @@ header .header-cases{
     color: #fff;
     text-shadow: 2px 1px 5px #111;
     line-height: 40px;
-    border: 1px solid #111;
+    border: 2px solid #111;
     float: right;
-    margin-right: 40px;
+    margin-right: 100px;
     margin-top: 30px;
     padding: 0 20px;
 
@@ -255,13 +267,29 @@ text-align: center;
 text-transform: uppercase;
 }
 
-.index-porfolio{
-  background-image: url(https://images.pexels.com/photos/191430/pexels-photo-191430.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+.index-cases{
+  background-image: url("https://images.pexels.com/photos/370659/pexels-photo-370659.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   background-size: cover;
+}
 
+.index-porfolio{
+  background-image: url("https://images.pexels.com/photos/191430/pexels-photo-191430.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.index-cory{
+  background-image: url("https://scontent.fyto1-1.fna.fbcdn.net/v/t31.0-8/10497104_10152151485666627_7753057001020918944_o.jpg?oh=e977dc26be47344d1d5364eaf9e928ff&oe=5B4CD7A1");
+  background-size: cover;
 }
 .index-youtube{
-  background-image: url(https://images.pexels.com/photos/34407/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-image: url("https://images.pexels.com/photos/34407/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.index-about{
+  background-image: url("https://images.pexels.com/photos/196649/pexels-photo-196649.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.index-contact{
+  background-image: url("https://images.pexels.com/photos/362/marketing-man-person-communication.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
   background-size: cover;
 }
 @media only screen and (min-width: 1000px) {
@@ -269,13 +297,10 @@ text-transform: uppercase;
     width: 1000px;
     margin: 0 auto;
   }
-
   .wrapper-wide{
     width: 1600px;
     margin: 0 auto;
-
   }
-
   .index-banner{
   height: 400px;
   }
@@ -315,15 +340,19 @@ text-transform: uppercase;
 /* CASES */
 .cases-links{
   overflow: hidden;
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 .cases-links h2{
+  margin: 20px;
+  padding:10px;
   font-family: RockSalt;
-  font-size: 34px;
+  font-size: 44px;
   font-weight: 600;
-  color: #111;
+  color: #51D6FF;
+  text-shadow: 1px 1px 5px #111;
   text-transform: uppercase;
+  text-align: center;
 }
 .cases-links .case-link{
   float: left;
@@ -337,9 +366,35 @@ text-transform: uppercase;
   font-family: RockSalt;
   font-size:28px;
   font-weight: 600;
-  color: #111;
+  color: #e3e3e3;
+  text-shadow: 2px 1px 5px #111;
   text-align: center;
   text-transform: uppercase;
+}
+.cases-webdesign{
+  background-image: url("https://images.pexels.com/photos/34140/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+
+.cases-webdevelop{
+  background-image: url("https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.cases-videography{
+  background-image: url("https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.cases-photography{
+  background-image: url("https://images.pexels.com/photos/8140/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.cases-youtube{
+  background-image: url("https://images.pexels.com/photos/221181/pexels-photo-221181.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+}
+.cases-consult{
+  background-image: url("https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
 }
 .contact-us h3{
   margin: 40px;
@@ -348,7 +403,7 @@ text-transform: uppercase;
   font-size:50px;
   font-weight: 500;
   color: #51D6FF;
-    text-shadow: 1px 1px 5px #111;
+  text-shadow: 1px 1px 5px #111;
   text-align: center;
   text-transform: uppercase;
   background-color: #565554;
@@ -422,6 +477,7 @@ text-transform: uppercase;
       }
 }
 /* FOOTER */
+
 footer {
   margin-top: 20px;
   width: calc(100% - 80px);
@@ -429,18 +485,15 @@ footer {
   background-color: #111;
   overflow: hidden;
 }
-
 footer ul{
   width: fit-content;
   float: left;
   padding-left: 20px;
 }
-
 footer ul li{
   display: block;
   list-style: none;
 }
-
 footer ul li a{
   font-family: Bangers;
   font-size: 26px;
@@ -448,11 +501,9 @@ footer ul li a{
   line-height: 42px;
   letter-spacing: 2px;
 }
-
 .footer-links-cases{
   display: none;
 }
-
 .footer-sm {
   width: 50px;
   float: right;
